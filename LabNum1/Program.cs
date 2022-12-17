@@ -1,77 +1,62 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Labs
+public static class LabNum1
 {
-    public static class LabNum1
+    public static void Main()
     {
-        public static void Main()
+        bool exit = false;
+
+        string lastInput = string.Empty;
+
+        while (!exit)
         {
-            bool exit = false;
+            string enterNum = Console.ReadLine();
 
-            string lastInput = string.Empty;
+            if (enterNum == "q")
+                exit = true;
 
-            while (!exit)
+            bool enterNumDouble;
+
+            if ((enterNum == string.Empty) || (!StrNumCorrect(enterNum, out enterNumDouble)))
             {
-                string userInput = Console.ReadLine();
+                Console.WriteLine("Некорректный ввод");
+                continue;
+            }
 
-                bool userNumberIsDouble;
-
-                if (userInput == "q")
+            if (enterNumDouble)
+            {
+                if (lastInput != string.Empty && double.Parse(enterNum) == double.Parse(lastInput))
                     exit = true;
-
-                if ((userInput == string.Empty) || (!IsStrNumberCorrect(userInput, out userNumberIsDouble)))
-                {
-                    Console.WriteLine($"Некорректный ввод");
-                    continue;
-                }
-
-                if (userNumberIsDouble)
-                {
-                    if (lastInput != string.Empty && double.Parse(userInput) == double.Parse(lastInput))
-                        exit = true;
-                    else
-                        lastInput = string.Empty;
-                }
                 else
-                {
-                    if (int.Parse(userInput) > char.MaxValue || int.Parse(userInput) < char.MinValue)
-                        Console.WriteLine("Данное число не может быть выведенно в виде символа юникода");
-                    else
-                        Console.WriteLine((char)int.Parse(userInput));
-                }
-                lastInput = userInput;
+                    lastInput = string.Empty;
             }
-        }
-        private static bool IsStrNumberCorrect(string strNumber, out bool isDouble)
-        {
-            int positionIndex = 0;
-
-            isDouble = false;
-
-            if (strNumber[0] == '-' && strNumber.Length > 1)
-            {
-                if (!char.IsDigit(strNumber[0 + 1]))
-                    return false;
-
-                positionIndex += 2;
-            }
-
-            for (; positionIndex < strNumber.Length; positionIndex++)
-                if (!char.IsDigit(strNumber[positionIndex]))
-                    if ((strNumber[positionIndex] == ',') && (positionIndex != 0) && ((positionIndex + 1) < strNumber.Length) && !isDouble)
-                        isDouble = true;
-                    else
-                        return false;
-
-            if (isDouble)
-                return double.TryParse(strNumber, out _);
             else
-                return int.TryParse(strNumber, out _);
+            {
+                if (int.Parse(enterNum) < char.MinValue || int.Parse(enterNum) > char.MaxValue)
+                    Console.WriteLine("Число выходит за пределы кодировки Unicode!");
+                else
+                    Console.WriteLine((char)int.Parse(enterNum));
+            }
+            lastInput = enterNum;
         }
+    }
+    private static bool StrNumCorrect(string strNum, out bool isDouble)
+    {
+        int positionIndex = 0;
+
+        isDouble = false;
+
+        if (strNum[0] == '-' && strNum.Length > 1)
+        {
+            if (!char.IsDigit(strNum[0 + 1]))
+                return false;
+
+            positionIndex += 2;
+        }
+
+        if (isDouble)
+            return double.TryParse(strNum, out _);
+        else
+            return int.TryParse(strNum, out _);
     }
 }
