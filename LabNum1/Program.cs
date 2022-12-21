@@ -11,15 +11,14 @@ public static class LabNum1
         while (!exit)
         {
             string enterNum = Console.ReadLine();
+            bool enterNumDouble;
 
             if (enterNum == "q")
                 exit = true;
 
-            bool enterNumDouble;
-
             if ((enterNum == string.Empty) || (!StrNumCorrect(enterNum, out enterNumDouble)))
             {
-                Console.WriteLine("Некорректный ввод");
+                Console.WriteLine("Некорректный ввод!");
                 continue;
             }
 
