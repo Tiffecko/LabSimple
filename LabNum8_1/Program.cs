@@ -5,7 +5,6 @@ using System.Timers;
 
 public class FileData
 {
-    // Создаём класс для хранения информации из файла
     public int time1;
     public int time2;
     public string pos;
@@ -36,8 +35,7 @@ public class Programm
         Console.ReadKey();
     }
     public static void GetInfo()
-    {
-        // Метод считывает информацию из файла и вызывает метод, который расскладывает информацию в class           
+    {          
         char[] separators = { '-', '[', ',', ']' };
         int count = 0;
         foreach (var str in File.ReadLines("C:\\Users\\Axel\\source\repos\\LabNum8_1\\times.txt"))
@@ -129,7 +127,6 @@ public class Programm
 
     public static void DataToClass(string[] appartedData, int count)
     {
-        //Метод расскладывает информацию в class DataFromFile
         subtitles[count] = new FileData();
         subtitles[count].time1 = int.Parse(appartedData[0].Replace(":", "")) % 100;
         if (appartedData.Length == 2)
