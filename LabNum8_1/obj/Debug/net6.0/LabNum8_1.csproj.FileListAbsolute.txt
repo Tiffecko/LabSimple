@@ -1,0 +1,15 @@
+C:\Users\Axel\source\repos\LabNum8_1\bin\Debug\net6.0\LabNum8_1.exe
+C:\Users\Axel\source\repos\LabNum8_1\bin\Debug\net6.0\LabNum8_1.deps.json
+C:\Users\Axel\source\repos\LabNum8_1\bin\Debug\net6.0\LabNum8_1.runtimeconfig.json
+C:\Users\Axel\source\repos\LabNum8_1\bin\Debug\net6.0\LabNum8_1.dll
+C:\Users\Axel\source\repos\LabNum8_1\bin\Debug\net6.0\LabNum8_1.pdb
+C:\Users\Axel\source\repos\LabNum8_1\obj\Debug\net6.0\LabNum8_1.csproj.AssemblyReference.cache
+C:\Users\Axel\source\repos\LabNum8_1\obj\Debug\net6.0\LabNum8_1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Axel\source\repos\LabNum8_1\obj\Debug\net6.0\LabNum8_1.AssemblyInfoInputs.cache
+C:\Users\Axel\source\repos\LabNum8_1\obj\Debug\net6.0\LabNum8_1.AssemblyInfo.cs
+C:\Users\Axel\source\repos\LabNum8_1\obj\Debug\net6.0\LabNum8_1.csproj.CoreCompileInputs.cache
+C:\Users\Axel\source\repos\LabNum8_1\obj\Debug\net6.0\LabNum8_1.dll
+C:\Users\Axel\source\repos\LabNum8_1\obj\Debug\net6.0\refint\LabNum8_1.dll
+C:\Users\Axel\source\repos\LabNum8_1\obj\Debug\net6.0\LabNum8_1.pdb
+C:\Users\Axel\source\repos\LabNum8_1\obj\Debug\net6.0\LabNum8_1.genruntimeconfig.cache
+C:\Users\Axel\source\repos\LabNum8_1\obj\Debug\net6.0\ref\LabNum8_1.dll
