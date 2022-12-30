@@ -1,0 +1,15 @@
+C:\Users\Axel\source\repos\LabNum8_2\bin\Debug\net6.0\LabNum8_2.exe
+C:\Users\Axel\source\repos\LabNum8_2\bin\Debug\net6.0\LabNum8_2.deps.json
+C:\Users\Axel\source\repos\LabNum8_2\bin\Debug\net6.0\LabNum8_2.runtimeconfig.json
+C:\Users\Axel\source\repos\LabNum8_2\bin\Debug\net6.0\LabNum8_2.dll
+C:\Users\Axel\source\repos\LabNum8_2\bin\Debug\net6.0\LabNum8_2.pdb
+C:\Users\Axel\source\repos\LabNum8_2\obj\Debug\net6.0\LabNum8_2.csproj.AssemblyReference.cache
+C:\Users\Axel\source\repos\LabNum8_2\obj\Debug\net6.0\LabNum8_2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Axel\source\repos\LabNum8_2\obj\Debug\net6.0\LabNum8_2.AssemblyInfoInputs.cache
+C:\Users\Axel\source\repos\LabNum8_2\obj\Debug\net6.0\LabNum8_2.AssemblyInfo.cs
+C:\Users\Axel\source\repos\LabNum8_2\obj\Debug\net6.0\LabNum8_2.csproj.CoreCompileInputs.cache
+C:\Users\Axel\source\repos\LabNum8_2\obj\Debug\net6.0\LabNum8_2.dll
+C:\Users\Axel\source\repos\LabNum8_2\obj\Debug\net6.0\refint\LabNum8_2.dll
+C:\Users\Axel\source\repos\LabNum8_2\obj\Debug\net6.0\LabNum8_2.pdb
+C:\Users\Axel\source\repos\LabNum8_2\obj\Debug\net6.0\LabNum8_2.genruntimeconfig.cache
+C:\Users\Axel\source\repos\LabNum8_2\obj\Debug\net6.0\ref\LabNum8_2.dll
