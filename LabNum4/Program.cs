@@ -1,7 +1,7 @@
 ﻿using System;
 
 
-public static class Programm
+public static class LabNum4
 {
     static string[] numbers;
 
