@@ -7,7 +7,7 @@ public class Programm
 {
     static void Main()
     {
-        Console.Write("Введите дату, используя знак (\") : ");
+        Console.Write("Введите дату, используя знак «-» : ");
         string date = Console.ReadLine();
         date = ChangeDate(date);
         int count = 0;
