@@ -78,9 +78,7 @@ public class Programm
     }
     public static string ChangeDate(string date)
     {
-        date = date.Replace(":", "");
         date = date.Replace("-", "");
-        date = date.Replace(" ", "");
         return date;
     }
 
