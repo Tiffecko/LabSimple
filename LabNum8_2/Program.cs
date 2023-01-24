@@ -3,6 +3,21 @@ using System.IO;
 using System.Collections;
 
 
+public class Bills
+{
+    public long date;
+    public int sum = 0;
+    public string transaction;
+}
+class DateCompare : IComparer
+{
+    public int Compare(object obj1, object obj2)
+    {
+        var firstBill = (Bills)obj1;
+        var secondBill = (Bills)obj2;
+        return firstBill.date.CompareTo(secondBill.date);
+    }
+}
 public class Programm
 {
     static void Main()
@@ -93,20 +108,5 @@ public class Programm
         }
         if (sum < 0) return "Exception the amount less than 0";
         else return "amount is " + sum;
-    }
-}
-public class Bills
-{
-    public long date;
-    public int sum = 0;
-    public string transaction;
-}
-class DateCompare : IComparer
-{
-    public int Compare(object obj1, object obj2)
-    {
-        var firstBill = (Bills)obj1;
-        var secondBill = (Bills)obj2;
-        return firstBill.date.CompareTo(secondBill.date);
     }
 }
